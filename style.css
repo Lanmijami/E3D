@@ -1,17 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-  background-color: rgb(185, 200, 137);
+  background-image: url('/img/Pozadina.png');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  height: 45vh;
+}
+
+.h3container {
+  display: flex;
+  gap: 6rem;
 }
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
+  margin-top: 3rem;
 }
 
-.title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 6rem;
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo h3 {
+  font-size: 3rem;
+}
+
+@media (max-width: 1700px) {
+  .image {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 1500px) {
+  .image {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .image {
+    height: 25vh;
+  }
+
+  .photo h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .image {
+    height: 20vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .image {
+    height: 17vh;
+  }
+
+  .photo h3 {
+    font-size: 2rem;
+  }
 }
